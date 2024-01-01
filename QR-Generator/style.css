@@ -10,6 +10,43 @@
 /*   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   */
 
 
+/* Style for the header */
+header {
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    display: flex; 
+    font-size: 0.8em;
+    position: absolute;
+    padding: 0 4vw 0 4vw;
+    font-family: Invasible;
+    border-radius: 0 0 1em 1em;
+    justify-content: space-between;
+    box-shadow: 0 0 0.5em 0 rgba(0, 98, 130, 0.18);
+    background-color: rgba(0, 47, 255, 0.173);
+}
+
+/* Style for the header h1 link */
+header>h1>a {
+    color: rgba(241, 248, 249, 0.913);
+    text-decoration: solid ;
+}
+
+/* Style for the header link */
+header>a {
+    top: 1.3rem;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Techno;
+    position: relative;
+    text-decoration: solid ;
+    color: rgba(255, 255, 255, 0.612);
+}
+
+
+/*   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   */
+
+
 /* Defining the animation for showing the error/alert message */
 @keyframes show_message {
     from {
@@ -159,9 +196,32 @@ img {
 /*   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   */
 
 
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 0.65em;
+    }
+    header>a {
+        top: 1.25rem;
+        font-size: 1.3em;
+    }
+}
+
+
+/*   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~   */
+
+
 /* Media query for screens with a maximum width of 480px */
 @media screen and (max-width: 480px) {
-    /* Adjust the style of the QR card container for smaller screens */
+    header {
+        left: 8%;
+        width: 84%;
+        font-size: 0.8em;
+    }
+    header>a {
+        top: 1.45rem;
+        font-size: 1.35em;
+    }
     #qr-card {
         display: flex;
         width: 90%;
@@ -173,8 +233,6 @@ img {
         border-radius: 2.25em;
         background-image: linear-gradient(to bottom right, rgba(57, 189, 255, 0.834), rgba(110, 97, 255, 0.906));
     }
-
-    /* Adjust the style of the QR image container for smaller screens */
     #qrImage {
         margin: 10%;
         padding: 1%;
@@ -183,19 +241,13 @@ img {
         background-size: contain;
         border-radius: 5px;
     }
-
-    /* Adjust the style of the buttons container for smaller screens */
     #buttons {
         height: 14vw;
         padding: 0;
     }
-
-    /* Adjust the style of the generate button for smaller screens */
     #generateBtn {
         font-size: 4.5vmin;
     }
-
-    /* Adjust the style of the download button for smaller screens */
     #download {
         width: 12.5vw;
     }
