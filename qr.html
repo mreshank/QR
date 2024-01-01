@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags for responsive design and character set -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="qr.css">
+
+    <!-- Title of the webpage -->
+    <title>QR Code Generator -> [Mr. Eshank Tyagi]</title>
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- Message container -->
+        <div id="message">
+
+            <!-- Message to be shown -->
+            <h3 id="shown_message">⚠️ At least Enter Something!</h3> 
+        
+        </div>
+
+        <!-- QR card container -->
+        <div id="qr-card">
+
+            <!-- Form for user input -->
+            <form onsubmit="return generate()">
+
+                <!-- Input field for user to enter text -->
+                <input id="inputField" type="text" name="userInput">
+            
+            </form>
+
+            <!-- Container for the QR image -->
+            <div id="qrImage" style="visibility: hidden;">
+
+                <!-- Image tag where the QR code will be displayed -->
+                <img id="result" src="" title="" />
+
+            </div>
+
+            <!-- Button to generate the QR code -->
+            <button id="generateBtn">Generate</button>
+
+        </div>
+
+    </main>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="qr.js"></script>
+
+</body>
+
+</html>
