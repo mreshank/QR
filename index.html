@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Options</title>
+    <style>
+        /* Add your CSS styles here */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 25%;
+            justify-content: space-evenly;
+        }
+
+        .button {
+            padding: 5% 10%;
+            margin: -75% 10%;
+            font-size: 4vw;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 540px) {
+            .container {
+                flex-direction: column;
+            }
+            .button {
+                font-size: 6.25vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="button" onclick="redirectToGenerator()">QR Generator</button>
+        <button class="button" onclick="redirectToReader()">QR Reader</button>
+    </div>
+
+    <script>
+        // Add your JavaScript code here
+        function redirectToGenerator() {
+            window.location.href = "https://qr.eshank.co/generator";
+        }
+
+        function redirectToReader() {
+            window.location.href = "https://qr.eshank.co/reader";
+        }
+    </script>
+</body>
+
+</html>
