@@ -13,8 +13,8 @@
 /* Style for the header */
 header {
     top: 0%;
-    left: 25%;
-    width: 50%;
+    left: 28%;
+    width: 44%;
     display: flex; 
     font-size: 0.8em;
     position: absolute;
@@ -120,7 +120,7 @@ form {
     max-width: 44em;
     padding: 6%;
     padding-inline: 8%;
-    font-size: 100%;
+    font-size: 1.75em;
     border-radius: 15em;
 }
 
@@ -197,7 +197,7 @@ img {
 
 
 /* Media query for screens with a maximum width of 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
     header {
         font-size: 0.65em;
     }
@@ -212,7 +212,7 @@ img {
 
 
 /* Media query for screens with a maximum width of 480px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     header {
         left: 8%;
         width: 84%;
