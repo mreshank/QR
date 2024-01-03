@@ -25,11 +25,11 @@ function generate()
         QRimg.style.visibility = "visible"; 
         
         // If not empty, generate the QR code using the user input
-        let genUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${Uinp.value}&amp;size=500x500;&ecc=H;&margin=18`;
+        let genUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${Uinp.value}&amp;size=750x750;&ecc=H;&margin=20`;
         
         // Placing the hyperlinks and urls into their places.
         result.src = genUrl;
-        download.href = genUrl;
+        download.href = `${genUrl}&download=1`;
     } 
 
     else 

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <!-- Title of the webpage -->
     <title>QR Code Generator -> [Mr. Eshank Tyagi]</title>
@@ -30,7 +30,7 @@
         <div id="message">
 
             <!-- Message to be shown -->
-            <h3 id="shown_message">⚠️ At least Enter Something!</h3> 
+            <h3 id="shown_message">⚠️ No File Selected Yet!</h3> 
         
         </div>
 
@@ -41,25 +41,24 @@
             <form onsubmit="return generate()">
 
                 <!-- Input field for user to enter text -->
-                <input id="inputField" type="text" name="userInput">
+                <input id="inputField" type="file" name="userInput">
             
             </form>
 
             <!-- Container for the QR image -->
-            <div id="qrImage" style="visibility: hidden;">
+            <div id="qrResult" style="visibility: hidden;">
 
-                <!-- Image tag where the QR code will be displayed -->
-                <img id="result" src="" title="" />
+                <!-- textarea tag where the QR code's result will be displayed -->
+                <textarea id="result" style="visibility: visible;" ></textarea>
 
             </div>
 
             <div id="buttons">
                 
                 <!-- Button to generate the QR code -->
-                <button id="generateBtn">Generate</button>
+                <button id="generateBtn">Read</button>
 
-                <a id="download" download="QR_Image.png"></a>
-
+                <button id="copy"></button>
 
             </div>
 
@@ -68,7 +67,7 @@
     </main>
 
     <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 
 </body>
 
